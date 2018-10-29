@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 3 - Collage</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box; 
+		}
+
+
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+
+
+		.container {
+			background: black;
+			min-height: 100vh;
+			display: grid;
+			grid-template-columns: 2fr 2fr 2fr 2fr; 
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-areas:
+
+
+			"p1 p2 p2 p3"
+			"p4 p4 p4 p4"
+			"p5 p6 p6 p7";
+			grid-gap: 10px;
+			padding: 10px;
+		}
+
+		.item {
+			background: blue;
+			min-height: 50px;
+			min-width: 100px;
+		}
+
+		#content {
+			width: 500px;
+			margin:auto;
+			background: black;
+			padding:10px;
+			border-radius: 1px;
+			box-shadow: 1px 1px 10px rgba(0,0,0,0,0.2)
+		}
+
+		#photo1 {
+			grid-area: p1;
+			background:url(https://i.kinja-img.com/gawker-media/image/upload/s--Ysy5b3wp--/c_scale,f_auto,fl_progressive,q_80,w_800/qltl3g1anktzdwqbogph.jpg);
+			background-size: cover;
+			background-position: center; 
+		}
+
+		#photo2 {
+			grid-area: p2;
+			background:url(https://data.whicdn.com/images/315967379/large.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+
+		#photo3 {
+			grid-area: p3;
+			background:url(56a3782b07eab32b5340f164c566349450ee84cd.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo4 {
+			grid-area: p4;
+			background:url(https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=332072f9d176b37db042ab986a829577&w=1000&q=80);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo5 {
+			grid-area: p5;
+			background:url(https://i.scdn.co/image/7db34c8aace6feb91f38601bb75e6b3301b4657a);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo6 {
+			grid-area: p6;
+			background:url(https://akns-images.eonline.com/eol_images/Entire_Site/201848/rs_600x600-180508105629-600.shawn-mendes-the-tour.5818.jpg?fit=around|700:700&crop=700:700;center,top&output-quality=90);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo7 {
+			grid-area: p7;
+			background:url(https://media.npr.org/assets/img/2017/06/13/sza_ctrl_pressimage_custom-e854108fee9ca6f2f4df927fee266110cd49c276-s800-c85.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		body {
+			background: black;
+		}
+
+
+
+	</style>
+
+</head>
+<body>
+	<div id="content">  
+	<div class="container">
+		<div class="item" id="photo1">
+		</div>
+		
+		<div class="item" id="photo2">
+		</div>
+		
+		<div class="item" id="photo3">
+		</div>
+		
+		<div class="item" id="photo4">
+		</div>
+
+		<div class="item" id="photo5">
+		</div>
+
+		<div class="item" id="photo6">
+		</div>
+
+
+		<div class="item" id="photo7">
+		</div>
+		</div>
+
+
+
+		
+	</div>
+</body>
+</html>
